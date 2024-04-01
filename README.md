@@ -12,9 +12,9 @@ and PROTOCOL PROCEDURES AT THE SENDING END from section 4.2 with implementation 
 
 Assuming a simplified version, I'm dealing with a single MAP channel and focus on segmenting data into smaller packets, each with a basic header. I've added a basic QoS parameter to each MAPA_SDU to prioritize packets.
 
-First run the receiver code on one desktop and then run the sender code on another desktop with proper host and port ID. 
+First run the receiver code on one desktop and then run the sender code on another desktop with proper host and port ID for the connection to be established between the two desktop.
 
-host Id for a desktop can be found at command prompt by type "ipconfig" and the active port can be found 
+host Id for a desktop can be found at command prompt by type "ipconfig" and the active port can be found by typing "netstat -a -b" in the command prompt that gives all active connections and listening ports, along with the executable names of the services or processes using them.
 
 
 
