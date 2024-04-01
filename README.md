@@ -9,3 +9,12 @@ b) Transfer Frame Data Field (integral number of octets, mandatory);
 c) Frame Error Control Field (2 octets, optional).
 
 and PROTOCOL PROCEDURES AT THE SENDING END from section 4.2 with implementation of MAP Packet Service and MAP Access Service in very simple way.
+
+Assuming a simplified version, I'm dealing with a single MAP channel and focus on segmenting data into smaller packets, each with a basic header. I've added a basic QoS parameter to each MAPA_SDU to prioritize packets.
+
+First run the receiver code on one desktop and then run the sender code on another desktop with proper host and port ID. 
+
+host Id for a desktop can be found at command prompt by type "ipconfig" and the active port can be found 
+
+
+
